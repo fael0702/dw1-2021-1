@@ -18,10 +18,20 @@
        mark {
            background-color: cornflowerblue;
        }
+      h1 {
+          /* valores para text-align:
+             left, right, center, justify */
+             text-align: center;   
+      }
+      /* <p class="dir"> */
+    p.dir {
+        text-align: right;
+    }
     </style>
 </head>
 <body>
     <h1>Formataçao de texto</h1>
+    <p class="dir">historia baseada em fatos reais </class></p>
     <!-- tag <u> = underline (sublinhado)-->
     <!-- tag <address> = endereço-->
     <p>orkutilson morava na <address>Rua do sobe e desçe,
@@ -62,6 +72,28 @@
 
     <p>orkutilson também gostava de formulas.  suas preferidas eram
         H<sup>2</sup>O e E = mc<sup>2</sup>
-    </p>    
+    </p>   
+    <!-- <quote> = citaçoes no meio de um paragrafo
+         <blackquotes> =  um bloco de citaçao (com varias linhas, por exemplo)
+    --> 
+    <p>sua frase prefirida era <quote>"penso, logo existo"(descartes)</quote>. E seu trecho de musica
+       preferida era</p>
+    <blackquotes>
+     ha tantos mundos diferentes<br>
+     tantos sois diferentes. <br>
+     e nos temos apenas um mundo, <br>
+     mas vivemos em mundos diferentes. <br>
+     (dire straits, brothers in arms)
+    </blackquotes>
+    <!-- <abbr> = definiçao de abreviaçao 
+         <code> =  representa codigo  de programaçao ou marcaçao. no caso de 
+         HTML, os sinais  < e > precisam ser substituido por &lt; e &gt; , respectivamente    
+    -->
+    <p>em suas horas vagas, orkutilson era um membro ativo
+       da <abbr title="associaçao comercial dos moradores do bairro do limao" >ASMOBALI</abbr> e estudava <abbr title="HyperText Markup Language">HTML</abbr>.
+       suas tags favoritas  eram <code>&lt;blackqoute&gt; </code> e
+       <code>&lt;adress&gt;</code>.
+    </p>
+    <p><em> <p class="dir"></class>autor: desconhecido</em></p>
 </body>
 </html>
