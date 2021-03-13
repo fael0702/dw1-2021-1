@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imagens</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <style>
         /* Regras iniciadas com # se aplicam ao elemento com id do mesmo nome */
         #logo {
@@ -42,5 +43,24 @@
      <figcaption>A Apptiva oferece as melhores tecnologiapara educaçao a distancia. Faça como essa nossa aluna!</figcaption>
      </figure>
      <img style="width: 50%; border: 1px solid blue" src="img/svg-logo.svg" alt="Logotipo do tipo SVG">
+
+     <!-- 
+         a tag <img> pertence ao grupo dos ELEMENTOS DE LINHA, ou seja, varios <img> em sequencias, havendo largura suficiente, serao exibidos na mesma linha.
+         Ja a tag <div> pertence ao grupo de ELEMENTOS DE BLOCO. Cada elemento desse grupo ocupara, por padrao, toda a largura disponivel, deslocando os demais para baixo.
+        -->
+
+     <div style="background: yellow" >   
+     <img src="img/apptiva-icon.png" alt="Ícone da apptiva">
+     </div>
+
+     <!-- via CSS, é possivel fazer um elemento de linha se comportar como um elemento de bloco -->
+
+     <img style="display: block" src="img/apptiva-icon.png" alt="Ícone da apptiva">
+
+     <img src="img/apptiva-icon.png" alt="Ícone da apptiva">
+
+     <img src="img/apptiva-icon.png" alt="Ícone da apptiva">
+     
+     
 </body>
 </html>
