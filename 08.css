@@ -6,7 +6,7 @@ a {
 }
     a:visited {
         /*color:  green; */
-        filter: brightness(50%); 
+        color: green;
 
     }
 
@@ -17,4 +17,3 @@ a {
         text-decoration: underline; /* volta o sublinhado */
     }
 
-}
