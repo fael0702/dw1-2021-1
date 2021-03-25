@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áudio em HTML</title>
+</head>
+<body>
+    <h1>Áudio em HTML</h1>
+
+    <h2>Formato comuns de arquivos de áudio</h2>
+    <ul>
+        <li><strong>MP3</strong>. Formato de áudio mais popular na atualidade. Foi desenvolvido pelo instituto alemão Fraunhofer em 1993, como um formato de audio de compressao de eprdas.
+        No entanto, seu uso estava sujeito a patente em 2012, o que causou varios problemas legais. Atualmete, seu uso é livre. A sigla MP3 significa <em>MPEG layer 3</em>, sendo que MPEG significa <em>motion picture expert group</em> (grupo de especialidades de imagens em movimento). </li>
+        <li><strong>QGG</strong>. Tambem conhecido como QGG vorbis, foi desenvolvido pela funçao xiph.org e lançado em 2000 como uma alternativa livre ao MP3. Apenas de ter mais qualidade tecnica, nunca alcançous a popularidade do concorrente. Tambem é um formato de compressão com perdas</li>
+        <li><strong>WAV</strong>. Formato nativo dos audios dos sistemas operacionais da microsoft e da IBM, lançado em 1991. Armazena o audio sem compressao; portanto os arquivos .wav sao bem maiores que os dos outros formatos, embora a qualidade sonora tambem seja melhor. </li>
+    </ul>
+
+    <h2>Exemplo de áudio</h2>
+
+    <!--
+        Opçao de tag <audio>:
+        controls -> mostra ass controles do player 
+        autoplay -> ao carregar a pagina, já inicia a reproduçao 
+        loop -> reproduz automaticamente
+        preload -> precarrega algumas informaçoes. valores possiveis:
+          * metadata: carrega só as informaçoes sobre o arquivo, como sua duraçao
+          * none: nao carrega nada antecipadamente 
+          * auto: (padrao): carrega o audio inteiro, mesmo que o usuario nunca de o play
+    -->
+
+    <audio controls src="audio/trilha.mp3">
+    <!-- Se o navegador for muito antigo e incapaz de reproduzir o audio,
+         sera exibida a mensagem abaixo -->
+        Seu navegador não suporta áudios nativos HTML. Faça o <a href="audio/trilha.mp3" download="trilha.mp3">download</a> do arquivo. </audio>
+
+        <h2>Exemplo de audio com multiplas fontes</h2>
+
+        <audio preload="metadata" controls >
+            <!-- os sources sao arranjados em ordem de prioridade -->
+            <source src="audio/trilha.mp3" type="audio/mpeg">
+            <source src="audio/trilha.mp3" type="audio/ogg">
+            <source src="audio/trilha.mp3" type="audio/wav">
+            <p>Seu navegador nao suporta audios nativos HTML. Faça o <a href="audio/trilha.mp3" download="trilha.mp3">download</a> do arquivo. </p></souce>
+        </audio>
+
+</body>
+</html>
