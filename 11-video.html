@@ -8,8 +8,28 @@
 <body>
 
     <h1>Vídeo em HTML</h1>
+    <p>Para entender os formatos de video, é preciso entender primeiro oque sao os <em>codecs</em> (codificadores/decodificadores). Trata-se de algoritmos que codificam e depois decodificam varias imagens em sequencias para criar a ilusao de movimento. Alguns <em>codecs</em> de video nao lidam com a parte de som. 
+    Com isso, torna-se necessario acrescentar o audio em uma parte separada, usando um dos formatos de audio ja estudado.</p>
+
+    <p>Para juntar as partes de video, audio e outras informaçoes (como, por exemplo as legendas) em uma unica, existem os formatos <em>container</em>. Esses formatos podem iguais por foras, enquanto por dentro, trazem trilhas multimidia produzidas com <em>codecs</em> diferentes. Por isso o equipamento ira reproduzi-los precisa, alem de conheçer o formato do arquivo <em>container</em>, ter tambem instalados os <em>codecs</em> para decodificar audio e video. Os navegadores trazem instalados os <em>codecs</em> mais comuns.</p>
+
+    <ul>
+        <li><strong>MP4</strong>: formato introduzido em 2001 pela ISO (<em>international standards organization</em>, organizaçao internacional de padroes), e que se tornou o padrao de mercado. É um formato <em>container</em> que suporta varios <em>codecs</em> tanto de audio como de video, que usualmente estao sob compressao.</li>
+
+        <li><strong>M4V:</strong> formato introduzido pela apple, tecnicamente semelhante ao MP4. No entanto, esse formato suporta DRM (<em>digital rights management</em> gerenciamento de direitos digitais), permitindo que conteudos protegidos por direitos autorais so possam ser reproduzidos por quem tiver adquirido a licença para tal. </li>
+
+        <li><strong>WEBM</strong>: projeto irmao do webP, iniciado pela fundaçao xiph.org em 2010 e depois assumido pelo google. Étambem um formato <em>container</em>, que promete melhor qualidade de compressao em um menor tamanho de arquivo quando comparado ao MP4. </li>
+
+        <li><strong>OGV</strong>: formato <em>container</em> da familia OGV Vorbis, introduzida pela fundaçao  xiph.org em 2004, de livre utilizaçao.</li>
+
+        <li><strong>AVI</strong>: sigla para <em>audio video interleaved</em> (audio em video intrelaçado), introduzido pela microsoft em 1992. É em um formato sem compressao tendendo a gerar arquivos muito grandes.</li>
+    </ul>
 
     <h2>Exemplo de vídeo com multiplas fontes</h2>
+
+    <p>Hospedar videos em seu proprio <em>website</em> pode sair caro, pois varias hospedagem atualmente cobram por trafego, um tipico video de 500MB de tamanho, por exemplo, ao ser reproduzido 20 vezes, tera consumido 10GB de trafego.</p>
+
+    <p>Portanto, na maioria das vezes, o melhor a ser fazer é hospedar seu video em serviços como o youtube ou o vimeo e apenas incorporar ("linkar") o video em seu <em>site</em>. Enquanto videos hospedados no youtube geralmente estarao disponivel para um publico amplo, enquanto o vimeo, mediamente pagamento, permite restringir o acesso aos videos.   </p>
 
     <video controls width="400px" poster="video/reduzir-pdf-thumb.png">
         <source src="video/reduzir-pdf.mp4" type="video/mp4">
@@ -17,6 +37,17 @@
         <source src="video/reduzir-pdf.webm" type="video/webm">  
         <p>Nao foi possivel baixar o video. Faça o <a href="video/reduzir-pdf.mp4" download="reproduzir-pdf.mp4" >download</a> do arquivo.</p>          
     </video>
+
+    <h2>Exemplos de videos incorporados</h2>
+
+    <p>Video incorporado do youtube</p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jgQjeqGRdgA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <p>Video incorporado do vimeo</p>
+
+    <iframe src="https://player.vimeo.com/video/109647998" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/109647998">Dire Straits   Sultans Of Swing (Alchemy Live)</a> from <a href="https://vimeo.com/user33584213">Ronaldo Dalvage</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
     
 </body>
 </html>
