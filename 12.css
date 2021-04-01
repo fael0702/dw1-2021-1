@@ -1,0 +1,27 @@
+div.container{
+    background-color: darkgray;
+    font-family: calibri, arial, sans;
+    padding: 20px; /* espaçamento interno */
+    border-left: 7px dotted black;
+    border-right: 7px dashed blue;
+}
+
+/* divs internas */
+div.container div{
+    border: 1px solid red;
+    padding: 12px;
+    margin-bottom: 16px; /* apenas a margem inferior */
+}
+
+#box1 {
+    background-color: goldenrod;
+}
+
+#box2 {
+    background-color: lightskyblue;
+}
+
+#box3 {
+    background-color: yellowgreen;
+    margin-bottom: 0;
+}
