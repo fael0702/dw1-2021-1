@@ -60,4 +60,5 @@ div {
     background-color: aquamarine;
     font-size: 3rem; /* 3 * 30px do tamanho de fonte do elemento raiz = 60px */ 
     width: 40vw; /* 40% da largura da janela (e nao do pai!) */
+
 }
