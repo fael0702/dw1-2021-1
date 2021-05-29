@@ -9,7 +9,7 @@
 --cor-fundo-clara: #DDDDDD;
 --cor-fundo-escura: #BBBBBB;
 --cor-texto-claro: #FFFFFF;
---cor-texto-escura: #777777;
+--cor-texto-escura: #444444;
 }
 
 /* CSS reset */
@@ -237,6 +237,45 @@ display: flex;
 flex-direction: row; /* Os filhos ficarão em linha, na horizontal */
 }
 
+.foto-texto img {
+    width: 450px;
+    margin-right: 24px;
+    border-radius: 4px;
+    /* Largura máxima limitada à largura do pai */
+    max-width: 100%;
+}
+
+.individual h1 {
+    color: var(--cor-primaria);
+    font-size: 2.5rem;
+    margin: 12px 0;
+}
+
+.individual p {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+
+.individual .foto-texto {
+    flex-direction: column;
+}
+
+.individual .foto-texto img {
+    /* Centraliza a imagem horizontalmente */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.individual .foto-texto p {
+    margin: 12px 0 36px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.individual img {
+    border-radius: 4px;
+}
+
 aside > article > img {
 display: block;
 /* margin auto à esquerda e à direita centraliza o elemento quando este é
@@ -370,4 +409,17 @@ text-align: right;
 /*
 A FAZER: colocar o logo principal e os ícones de redes sociais em coluna
 */
+header {
+    flex-direction: column;
+    align-items: center;
+}
+header img {
+    max-width: 90%;
+}
+.destaque > h1 > a {
+    font-size: 2rem;
+}
+.individual h1 {
+    font-size: 2rem;
+}
 }
